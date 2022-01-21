@@ -38,7 +38,40 @@ public class Read {
     }
 
     public void info(){
-        System.out.println("Podaj w kolejności (x,y,b,c,d,e) : ");
-
+        System.out.println("Podaj w kolejności (a,b,c)");
     }
+
+
+    public void infoArm(){
+        System.out.println("Podaj w kolejności (x,y,a,b,c)");
+    }
+
+    public void singleTrygonometry(){
+        Wzory wzory = new Wzory();
+
+        info();
+
+        double a;
+        double b;
+        double c;
+
+        do {
+            a = getIn();
+            b = getIn();
+            c = getIn();
+        }while(daSie(a,b,c) == false);       //Pobranie danych do obliczenia kątów
+
+        wzory.setA(a);
+        wzory.setB(b);
+        wzory.setC(c);
+
+        wzory.calculateAngles();
+        //wzory.giveInfo();
+        wzory.giveAngle();
+    }
+
+    public void givArmAngles(){
+        infoArm();
+    }
+
 }

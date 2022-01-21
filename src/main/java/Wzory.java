@@ -188,7 +188,6 @@ public class Wzory {
     }
 
     public void giveInfo(){
-        calculateAngles();
         System.out.println("A : " + a);
         System.out.println("B : " + b);
         System.out.println("C : " + c);
@@ -205,9 +204,11 @@ public class Wzory {
         System.out.println("Tag B :  " + tanB);
         System.out.println("Ctag B : " + ctanB);
 
+    }
+
+    public void giveAngle(){
         System.out.println("Angle A : " + sinToDegrees(sinA));
         System.out.println("Angle B : " + sinToDegrees(sinB));
-
     }
 
     public double convertToDegrees(double rad){
