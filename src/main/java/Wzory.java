@@ -44,7 +44,7 @@ public class Wzory {
         return angle1;
     }
 
-    public void setAngle1(double angle1A) {
+    public void setAngle1(double angle1) {
         this.angle1 = angle1;
     }
 
@@ -52,7 +52,7 @@ public class Wzory {
         return angle2;
     }
 
-    public void setAngle2(double angle2A) {
+    public void setAngle2(double angle2) {
         this.angle2 = angle2;
     }
 
@@ -86,6 +86,7 @@ public class Wzory {
     public void giveAngle(){
         System.out.println("Angle A : " + sinToDegrees(sinA));
         System.out.println("Angle B : " + sinToDegrees(sinB));
+        System.out.println("Angle C : 90");
     }
 
     public double convertToDegrees(double rad){

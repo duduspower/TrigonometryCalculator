@@ -44,6 +44,8 @@ public class Read {
     public void singleTrygonometry(){
         Wzory wzory = new Wzory();
 
+        System.out.println("Program do oblicznia kątów w trójkącie prostokątnym na podstawie długości 3 boków \n");
+
         info();
 
         double a;
