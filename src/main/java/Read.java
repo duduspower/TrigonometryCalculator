@@ -41,11 +41,6 @@ public class Read {
         System.out.println("Podaj w kolejności (a,b,c)");
     }
 
-
-    public void infoArm(){
-        System.out.println("Podaj w kolejności (x,y,a,b,c)");
-    }
-
     public void singleTrygonometry(){
         Wzory wzory = new Wzory();
 
@@ -69,9 +64,4 @@ public class Read {
         //wzory.giveInfo();
         wzory.giveAngle();
     }
-
-    public void givArmAngles(){
-        infoArm();
-    }
-
 }
